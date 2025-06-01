@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Functions Jog</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeText()">JS</h1>
+    <p id="addition"></p>
+    <script>
+        var num1;
+        var num2;
+        document.getElementById("addition").innerHTML = addNumbers(2,4);
+        
+        function changeText(){
+        if(document.getElementById("heading").innerHTML == 'JS'){
+            document.getElementById("heading").innerHTML = 'is kinda cool, Man!';
+        }
+        else{
+            document.getElementById("heading").innerHTML = 'JS';
+        }
+
+        }
+       /* function addNumbers(num1,num2){
+          document.getElementById("addition").innerHTML = num1 + num2;
+        }*/
+        function addNumbers(num1,num2){
+         return num1 + num2;
+        }
+    </script>
+</body>
+</html>
